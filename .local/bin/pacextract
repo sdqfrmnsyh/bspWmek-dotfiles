@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <package>"
+    exit 1
+fi
+
+PKG="$1"
+DEST="$PWD/$PKG"
+
+mkdir -p "$DEST"
+
+pacman -Ql "$PKG" | while read -r _ path; do
+    rel="${path#/}"
+    target="$DEST/$rel"
+
+    if [[ -d "$path" ]]; then
+        mkdir -p "$target"
+    elif [[ -e "$path" ]]; then
+        mkdir -p "$(dirname "$target")"
+        cp -a "$path" "$target"
+    fi
+done
+
+echo "Done!"
+echo "Output: $DEST"

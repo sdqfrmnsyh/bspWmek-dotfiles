@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Workspace
+bspc monitor -d 1 2 3 4
+
+# Layout
+bspc config split_ratio 0.50
+
+# Window spacing
+bspc config window_gap 8
+bspc config border_width 2
+
+# Padding
+bspc config top_padding 0
+bspc config bottom_padding 0
+bspc config left_padding 0
+bspc config right_padding 0
+
+# Kill
+killall polybar
+killall picom
+killall sxhkd
+killall snixembed
+
+# Custom
+feh --randomize --bg-fill /home/modz/Wallpapers/
+polybar -r
+picom -b
+sxhkd&
+taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 snixembed&
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&

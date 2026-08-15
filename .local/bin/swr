@@ -1,0 +1,17 @@
+#!/bin/sh
+
+CONFIG="$HOME/.config/rofi/config.rasi"
+THEME="$1"
+
+[ -f "$THEME" ] || {
+    echo "File tidak ditemukan: $THEME"
+    exit 1
+}
+
+# Hapus semua deklarasi tema
+sed -i '/^[[:space:]]*@theme[[:space:]]/d' "$CONFIG"
+
+# Tambahkan tema baru di akhir file
+printf '\n@theme "%s"\n' "$THEME" >> "$CONFIG"
+
+echo "Tema diganti ke: $THEME"

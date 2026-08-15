@@ -1,0 +1,38 @@
+[global]
+    origin = bottom-right
+    offset = 0x35
+    width = 360
+    height = 120
+    notification_limit = 3
+    spacing = 8
+    corner_radius = 10
+    frame_width = 0
+    background = "#00000090"
+    foreground = "#FFFFFF"
+    separator_color = frame
+    separator_height = 0
+    font = "Segoe UI Variable 10"
+    icon_position = left
+    max_icon_size = 100
+    show_indicators = true
+    close = "X"
+    mouse_left_click = close_current
+    mouse_middle_click = close_all
+    timeout = 5
+    idle_threshold = 30
+    show_age_threshold = -1
+    history = yes
+    sticky_history = no
+    
+[play_sound]
+    summary = "*"
+    script = ~/.scripts/dunsound.sh
+
+[urgency_low]
+    timeout = 3
+
+[urgency_normal]
+    timeout = 5
+
+[urgency_critical]
+    timeout = 5

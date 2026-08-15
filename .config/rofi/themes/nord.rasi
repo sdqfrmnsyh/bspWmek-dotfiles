@@ -1,0 +1,171 @@
+/**
+ * Minimal Black Transparent
+ * Polybar companion theme
+ */
+
+* {
+    font: "IBM Plex Mono 12";
+
+    /* Neutral palette */
+    background:        #00000090;
+    background-alt:    #00000090;
+
+    foreground:        #F5F5F5;
+    foreground-alt:    #B8B8B8;
+
+    /* Subtle Nord accent */
+    accent:             #88C0D0;
+
+    red:                #FF7777;
+    green:              #A5E6A0;
+
+    transparent:        #00000000;
+
+    margin:  0px;
+    padding: 0px;
+    spacing: 0px;
+
+    background-color: @transparent;
+    text-color: @foreground;
+    accent-color: @accent;
+}
+
+
+/*==========================================================
+  WINDOW
+==========================================================*/
+
+window {
+    background-color: @background;
+
+    border: 1px;
+    border-color: #FFFFFF;
+
+    border-radius: 12px;
+
+    location: center;
+    width: 480px;
+}
+
+
+/*==========================================================
+  INPUT
+==========================================================*/
+
+inputbar {
+    padding: 10px 14px;
+    spacing: 12px;
+
+    children: [
+        icon-search,
+        entry
+    ];
+}
+
+icon-search,
+entry,
+element-text,
+element-icon {
+    vertical-align: 0.5;
+}
+
+
+/* Search field */
+
+entry {
+    font: "IBM Plex Mono Medium 12";
+
+    placeholder: "Search...";
+    placeholder-color: @foreground-alt;
+}
+
+
+/* Search icon */
+
+icon-search {
+    expand: false;
+
+    filename: "search-symbolic";
+    size: 18px;
+}
+
+
+/*==========================================================
+  LIST
+==========================================================*/
+
+listview {
+    lines: 8;
+    columns: 1;
+
+    fixed-height: false;
+}
+
+
+/*==========================================================
+  ELEMENT
+==========================================================*/
+
+element {
+    padding: 8px 10px;
+    spacing: 10px;
+}
+
+
+/* Normal */
+
+element normal {
+    text-color: @foreground-alt;
+}
+
+
+/* Urgent */
+
+element normal urgent {
+    text-color: @red;
+}
+
+
+/* Active */
+
+element normal active {
+    text-color: @accent;
+}
+
+element alternate active {
+    text-color: @accent;
+}
+
+
+/*==========================================================
+  SELECTED
+==========================================================*/
+
+element selected {
+    text-color: @foreground;
+    background-color: @background-alt;
+}
+
+element selected normal {
+    background-color: @background-alt;
+}
+
+element selected urgent {
+    background-color: @red;
+    text-color: @foreground;
+}
+
+element selected active {
+    background-color: @accent;
+    text-color: #202124;
+}
+
+
+/*==========================================================
+  ICONS
+==========================================================*/
+
+element-icon {
+    size: 0.75em;
+}
+

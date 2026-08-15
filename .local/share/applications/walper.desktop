@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Walper
+Exec=walper
+Icon=preferences-desktop-wallpaper
+Categories=Utility;Graphics;
+Terminal=false
+StartupNotify=false

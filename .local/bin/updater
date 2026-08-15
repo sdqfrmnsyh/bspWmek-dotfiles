@@ -1,0 +1,2 @@
+sudo pacman -Syyu --noconfirm
+flatpak update -y
