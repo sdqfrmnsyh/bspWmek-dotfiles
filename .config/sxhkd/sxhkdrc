@@ -4,7 +4,7 @@
 
 # Application launcher
 super + r
-    ~/.scripts/rofi.sh main
+    ~/.scripts/rofi.sh rice
 
 # Emoji picker
 super + period
