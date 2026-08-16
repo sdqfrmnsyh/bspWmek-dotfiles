@@ -41,12 +41,13 @@
 }
 
 window {
-    background-color:   @well;
+    background-color:   #00000090;
     border-color: #d8dee9;
     
     location:   center;
     width:     180px;
     border:     1px;
+    border-color:     #FFFFFF;
     border-radius    : 0px;
 }
 

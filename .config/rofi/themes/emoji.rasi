@@ -40,12 +40,13 @@
 }
 
 window {
-    background-color:   #55181818;
+    background-color:   #00000090;
     border-color: #FFFFFF;
     
     location:   center;
     width:     540px;
     border:     1px;
+    border-color:     #FFFFFF;
     border-radius    : 0px;
 }
 
