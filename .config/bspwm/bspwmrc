@@ -24,8 +24,8 @@ killall snixembed
 
 # Custom
 feh --randomize --bg-fill /home/modz/Wallpapers/
-polybar -r
-picom -b
 sxhkd&
+polybar -r -c /home/modz/.config/polybar/bconfig.ini
+picom -b
 taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 snixembed&
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&
