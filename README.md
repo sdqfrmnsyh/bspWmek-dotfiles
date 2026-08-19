@@ -282,7 +282,7 @@ chmod +x install.sh
 
 The installer will automatically:
 
-- Install **yay** (if not already installed)
+- Install **yay** and **chaotic-aur** (if not already installed)
 - Install all required dependencies and fonts
 - Copy all dotfiles into your **Home** directory
 - Install additional system configurations

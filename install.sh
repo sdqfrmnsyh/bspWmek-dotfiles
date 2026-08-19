@@ -3,7 +3,7 @@
 set -e
 
 echo "====================================="
-echo "      Wac Dotfiles Installer"
+echo "      bspWmek Dotfiles Installer"
 echo "====================================="
 
 # --------------------------------------------------
@@ -133,12 +133,14 @@ echo "[6/7] Setting permissions..."
 
 chmod -R +x "$HOME/.scripts"
 chmod -R +x "$HOME/.local/bin"
+chmod +x "$HOME/.config/bspwm/bspwmrc"
+chmod +x "$HOME/.config/sxkhd/sxkhdrc"
 
 # --------------------------------------------------
-# Reload Openbox
+# Reload bspwm
 # --------------------------------------------------
 
-echo "[7/7] Reloading Openbox..."
+echo "[7/7] Reloading bspwm..."
 
 bspc wm -r 2>/dev/null || true
 pkill -USR1 -x sxhkd 2>/dev/null || true
