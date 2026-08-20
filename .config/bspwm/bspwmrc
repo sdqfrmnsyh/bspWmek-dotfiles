@@ -8,7 +8,7 @@ bspc config split_ratio 0.50
 
 # Window spacing
 bspc config window_gap 8
-bspc config border_width 2
+bspc config border_width 0
 
 # Padding
 bspc config top_padding 0
@@ -16,16 +16,16 @@ bspc config bottom_padding 0
 bspc config left_padding 0
 bspc config right_padding 0
 
-# Kill
-killall polybar
-killall picom
-killall sxhkd
-killall snixembed
+# Kill old processes
+killall polybar 2>/dev/null
+killall picom 2>/dev/null
+killall sxhkd 2>/dev/null
+killall snixembed 2>/dev/null
 
 # Custom
-feh --randomize --bg-fill /home/modz/Wallpapers/
-sxhkd&
-polybar -r -c /home/modz/.config/polybar/bconfig.ini
-picom -b
-taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 snixembed&
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&
+feh --randomize --bg-fill ~/Wallpapers/ >/dev/null 2>&1 &
+polybar -r -c ~/.config/polybar/bconfig.ini >/dev/null 2>&1 &
+picom >/dev/null 2>&1 &
+sxhkd >/dev/null 2>&1 &
+snixembed >/dev/null 2>&1 &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 >/dev/null 2>&1 &
