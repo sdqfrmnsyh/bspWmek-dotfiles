@@ -23,6 +23,10 @@ killall sxhkd 2>/dev/null
 killall snixembed 2>/dev/null
 
 # Custom
+xset s off >/dev/null 2>&1 &
+xset s noblank >/dev/null 2>&1 &
+xset -dpms >/dev/null 2>&1 &
+xset dpms 0 0 0 >/dev/null 2>&1 &
 feh --randomize --bg-fill ~/Wallpapers/ >/dev/null 2>&1 &
 polybar -r -c ~/.config/polybar/bconfig.ini >/dev/null 2>&1 &
 picom >/dev/null 2>&1 &

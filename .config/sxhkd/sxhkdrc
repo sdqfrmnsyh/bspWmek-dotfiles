@@ -34,9 +34,6 @@ ctrl + shift + Escape
 # Close window
 alt + F4
     bspc node -c &
-
-End
-    bspc node -c &
     
 # Focus window
 super + Left
@@ -50,8 +47,7 @@ super + Up
 
 super + Down
     bspc node -y south &
-
-
+    
 # Move / swap window
 super + shift + Left
     bspc node -s west &
@@ -91,6 +87,10 @@ super + f
 super + shift + f
     bspc node -t tiled &
 
+# floating
+super + x
+    bspc node -t ~floating &
+    
 # Minimize
 super + z
     bspc node -g hidden=on &
@@ -98,7 +98,7 @@ super + z
 # Restore hidden window
 super + shift + z
     bspc node "$(bspc query -N -n .hidden | head -n 1)" -g hidden=off &
-
+    
 # ----------------------------------------------------------
 # Screenshots
 # ----------------------------------------------------------
