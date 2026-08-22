@@ -169,6 +169,9 @@ XF86HomePage
 Pause
     ~/.scripts/picom.sh &
 
+super + ctrl + shift + asciitilde
+    ~/.scripts/picom.sh &
+
 # Refresh display profile
 super + ctrl + shift + b
     ~/.scripts/display.sh &

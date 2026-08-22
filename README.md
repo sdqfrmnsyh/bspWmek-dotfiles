@@ -318,7 +318,6 @@ The installer will automatically:
 | Shortcut | Action |
 |----------|--------|
 | <kbd>Alt</kbd> + <kbd>F4</kbd> | Close Window |
-| <kbd>End</kbd> | Close Window |
 | <kbd>Super</kbd> + <kbd>←</kbd> | Focus Window West |
 | <kbd>Super</kbd> + <kbd>→</kbd> | Focus Window East |
 | <kbd>Super</kbd> + <kbd>↑</kbd> | Focus Window North |
@@ -344,6 +343,7 @@ The installer will automatically:
 | Shortcut | Action |
 |----------|--------|
 | <kbd>Super</kbd> + <kbd>F</kbd> | Toggle Fullscreen |
+| <kbd>Super</kbd> + <kbd>X</kbd> | Toggle between floating/tiled |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Force Restore from Fullscreen |
 | <kbd>Super</kbd> + <kbd>Z</kbd> | Minimize Window |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> | Restore Hidden Window |
@@ -390,6 +390,7 @@ The installer will automatically:
 |----------|--------|
 | <kbd>XF86HomePage</kbd> | Wallpaper Manager |
 | <kbd>Pause</kbd> | Toggle Picom |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>~</kbd> | Toggle Picom |
 | <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> | Refresh Display Profile |
 
 ---
