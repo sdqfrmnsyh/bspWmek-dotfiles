@@ -81,12 +81,8 @@ super + shift + {1-9}
 
 # Fullscreen
 super + f
-    bspc node -t fullscreen &
+    bspc node -t ~fullscreen &
     
-# Force restore dari fullscreen
-super + shift + f
-    bspc node -t tiled &
-
 # floating
 super + x
     bspc node -t ~floating &
@@ -163,7 +159,7 @@ XF86MonBrightnessDown
 
 # Wallpaper
 XF86HomePage
-    walper &
+    ~/.local/bin/walper &
 
 # Toggle Picom
 Pause
