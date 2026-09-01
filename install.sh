@@ -59,58 +59,7 @@ fi
 
 echo "[3/7] Installing dependencies..."
 
-yay -Syu --needed --noconfirm \
-polybar \
-snixembed \
-xorg-xset \
-qt5-base \
-qt5-tools \
-picom-ftlabs-git \
-rofi \
-rofi-emoji \
-rofi-power-menu \
-dunst \
-kitty \
-pcmanfm \
-fastfetch \
-playerctl \
-brightnessctl \
-pamixer \
-networkmanager \
-pavucontrol \
-scrot \
-polkit-gnome \
-xclip \
-ffmpeg \ 
-imagemagick \
-mission-center \
-feh \
-mv \
-git \
-brave-origin-bin \
-nano \
-wget \
-curl \
-cp \
-unzip \
-ananicy-cpp \
-cachyos-ananicy-rules \
-cava \
-htop \
-ttf-jetbrains-mono-nerd \
-ttf-material-design-icons-desktop \
-adobe-source-han-code-jp-fonts \
-libnotify \
-geany \
-alsa-utils \
-htop \
-inter-font \
-ttf-ibm-plex \
-cantarell-fonts \
-noto-fonts \
-ttf-liberation \
-ttf-dejavu \
-ttf-nerd-fonts-symbols-mono
+yay -Syu --needed --noconfirm polybar sxhkd gvfs snixembed xorg-xset qt5-base qt5-tools picom-ftlabs-git rofi rofi-emoji rofi-power-menu dunst kitty pcmanfm fastfetch playerctl brightnessctl pamixer networkmanager pavucontrol scrot polkit-gnome xclip ffmpeg imagemagick mission-center feh mv git brave-origin-bin nano wget curl cp unzip ananicy-cpp cachyos-ananicy-rules cava htop ttf-jetbrains-mono-nerd ttf-material-design-icons-desktop adobe-source-han-code-jp-fonts libnotify geany alsa-utils htop inter-font ttf-ibm-plex cantarell-fonts noto-fonts ttf-liberation ttf-dejavu ttf-nerd-fonts-symbols-mono
 
 # --------------------------------------------------
 # Copy Dotfiles
