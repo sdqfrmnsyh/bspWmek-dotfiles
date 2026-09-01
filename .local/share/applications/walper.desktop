@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Walper
-Exec=walper
+Exec=$HOME/.local/bin/walper
 Icon=preferences-desktop-wallpaper
 Categories=Utility;Graphics;
 Terminal=false
