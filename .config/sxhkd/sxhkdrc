@@ -61,7 +61,6 @@ super + shift + Up
 super + shift + Down
     bspc node -s south &
 
-
 # ----------------------------------------------------------
 # Workspace
 # ----------------------------------------------------------
@@ -82,14 +81,14 @@ super + shift + {1-9}
 # Fullscreen
 super + f
     bspc node -t ~fullscreen &
-    
+
 # floating
 super + x
     bspc node -t ~floating &
     
 # Minimize
 super + z
-    bspc node -g hidden=on &
+    bspc node --flag hidden=on &
 
 # Restore hidden window
 super + shift + z

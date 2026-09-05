@@ -15,6 +15,8 @@ bspc config top_padding 0
 bspc config bottom_padding 0
 bspc config left_padding 0
 bspc config right_padding 0
+bspc config border_width 2
+bspc config border_radius 10
 
 # Kill old processes
 killall polybar 2>/dev/null
@@ -23,6 +25,7 @@ killall sxhkd 2>/dev/null
 killall snixembed 2>/dev/null
 
 # Custom
+export SXHKD_SHELL=sh >/dev/null 2>&1 &
 xset s off >/dev/null 2>&1 &
 xset s noblank >/dev/null 2>&1 &
 xset -dpms >/dev/null 2>&1 &
