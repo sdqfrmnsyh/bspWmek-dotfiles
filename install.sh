@@ -204,6 +204,11 @@ install_debian() {
     echo "====================================="
     echo
 
+    echo "[2/7] Updating APT repositories..."
+
+    sudo apt update
+
+    echo
     echo "[3/7] Installing Debian packages..."
 
     sudo apt install -y \
@@ -223,7 +228,7 @@ install_debian() {
         brightnessctl \
         pavucontrol \
         scrot \
-        policykit-1-gnome \
+        mate-polkit \
         xclip \
         ffmpeg \
         imagemagick \
@@ -248,6 +253,9 @@ install_debian() {
         geany \
         alsa-utils
 
+    echo
+    echo "Debian packages installed."
+}
     # --------------------------------------------------
     # Optional packages
     # --------------------------------------------------
