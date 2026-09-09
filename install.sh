@@ -245,7 +245,6 @@ install_debian() {
         fonts-noto-cjk \
         fonts-noto-color-emoji \
         fonts-inter \
-        fonts-ibm-plex \
         fonts-cantarell \
         fonts-liberation \
         fonts-dejavu \
@@ -255,7 +254,7 @@ install_debian() {
 
     echo
     echo "Debian packages installed."
-}
+
     # --------------------------------------------------
     # Optional packages
     # --------------------------------------------------
