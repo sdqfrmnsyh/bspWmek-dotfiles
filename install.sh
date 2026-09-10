@@ -254,6 +254,12 @@ install_debian() {
         geany \
         alsa-utils
 
+
+mkdir -p ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+unzip JetBrainsMono.zip -d ~/.local/share/fonts/
+rm JetBrainsMono.zip
+
     echo
     echo "Debian packages installed."
 
