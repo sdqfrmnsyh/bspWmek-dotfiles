@@ -154,6 +154,7 @@ EOF
         rofi-emoji \
         rofi-power-menu \
         dunst \
+        fish \
         kitty \
         pcmanfm \
         fastfetch \
@@ -213,6 +214,7 @@ install_debian() {
 
     sudo apt install -y \
         bspwm \
+        fish \
         polybar \
         sxhkd \
         gvfs \
@@ -320,7 +322,6 @@ echo "[5/7] Making ALL files executable..."
 find "$HOME/.config" \
      "$HOME/.local" \
      "$HOME/.scripts" \
-     "$HOME/Wallpapers" \
      -type f \
      -exec chmod +x {} +
 
@@ -331,6 +332,14 @@ find "$HOME/.config" \
      "$HOME/Wallpapers" \
      -type d \
      -exec chmod +x {} +
+
+# set fish as default
+chsh -s /usr/bin/fish
+
+# set local bin as usr bin
+echo 'export PATH="$HOME/.local/bin:$PATH"' | sudo tee /etc/profile.d/local-bin.sh
+echo 'fish_add_path $HOME/.local/bin' | sudo tee /etc/fish/conf.d/local-bin.fish
+
 
 # ==================================================
 # bspwm / sxhkd permissions
