@@ -9,6 +9,7 @@ A clean and lightweight bspwm desktop environment for Arch Linux and CachyOS, bu
 <p align="center">
 
 ![Platform](https://img.shields.io/badge/Platform-Arch_Linux-blue?style=for-the-badge)
+![Platform](https://img.shields.io/badge/PLATFORM-DEBIAN-A81D33?style=for-the-badge)
 ![Distribution](https://img.shields.io/badge/Distribution-CachyOS-1793D1?style=for-the-badge)
 ![WM](https://img.shields.io/badge/WM-bspwm-black?style=for-the-badge)
 ![Display](https://img.shields.io/badge/Display-X11-orange?style=for-the-badge)
