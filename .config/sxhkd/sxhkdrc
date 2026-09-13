@@ -86,13 +86,14 @@ super + f
 super + x
     bspc node -t ~floating &
     
+# tiling style
+super + e
+    bspc node '@parent.vertical' -y horizontal || bspc node '@parent' -y vertical &
+    
 # Minimize
 super + z
-    bspc node --flag hidden=on &
-
-# Restore hidden window
-super + shift + z
-    bspc node "$(bspc query -N -n .hidden | head -n 1)" -g hidden=off &
+    bspc node --flag hidden=on || bspc node "$(bspc query -N -n .hidden | head -n 1)" -g hidden=off &
+    
     
 # ----------------------------------------------------------
 # Screenshots

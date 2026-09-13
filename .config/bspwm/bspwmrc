@@ -34,5 +34,5 @@ feh --randomize --bg-fill ~/Wallpapers/ >/dev/null 2>&1 &
 polybar -r -c ~/.config/polybar/bconfig.ini >/dev/null 2>&1 &
 picom >/dev/null 2>&1 &
 sxhkd >/dev/null 2>&1 &
-snixembed >/dev/null 2>&1 &
+snixembed --fork >/dev/null 2>&1 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 >/dev/null 2>&1 &
