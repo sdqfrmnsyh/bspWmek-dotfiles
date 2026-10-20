@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Task Manager 12
+GenericName=Task Manager
+GenericName[id]=Pengelola Tugas
+Comment=Better than Windows 11. Windows 11 was a beta test.
+Comment[id]=Lebih baik dari Windows 11. Windows 11 cuma beta.
+Exec=taskmgr12
+TryExec=taskmgr12
+Icon=taskmgr12
+Terminal=false
+StartupNotify=true
+StartupWMClass=taskmgr12
+Categories=System;Monitor;Utility;Qt;
+Keywords=task;manager;process;performance;services;monitor;cpu;memory;windows;
+Keywords[id]=tugas;manajer;proses;performa;layanan;monitor;cpu;memori;

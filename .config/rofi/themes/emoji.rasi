@@ -1,5 +1,5 @@
 * {
-    font:   "Cantarell 12";
+    font:   "Inter 12";
 
     nord0:     #2e3440;
     nord1:     #3b4252;
@@ -103,15 +103,15 @@ element selected {
 }
 
 element selected normal {
-    background-color: #d8dee9;
+    background-color: #30323490;
 }
 
 element selected active {
-    background-color: #d8dee9;
+    background-color: #30323490;
 }
 
 element selected urgent {
-    background-color: #bf616a;
+    background-color: #FF7777;
     text-color: #eceff4;
 }
 

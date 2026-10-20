@@ -4,11 +4,11 @@
  */
 
 * {
-    font: "IBM Plex Mono 12";
+    font: "Inter 12";
 
     /* Neutral palette */
     background:        #00000090;
-    background-alt:    #00000090;
+    background-alt:    #30323490;
 
     foreground:        #F5F5F5;
     foreground-alt:    #B8B8B8;

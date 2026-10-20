@@ -191,6 +191,7 @@ EOF
         noto-fonts \
         ttf-liberation \
         ttf-dejavu \
+        noto-fonts-emoji \
         ttf-nerd-fonts-symbols-mono
 }
 
@@ -250,6 +251,7 @@ install_debian() {
         fonts-cantarell \
         fonts-liberation \
         fonts-dejavu \
+        noto-fonts-emoji \
         libnotify-bin \
         geany \
         alsa-utils

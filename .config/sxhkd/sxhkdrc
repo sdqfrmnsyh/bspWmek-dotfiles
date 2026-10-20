@@ -22,9 +22,12 @@ XF86Explorer
 XF86Calculator
     kitty &
 
-# Mission Center
+# Task Manager
 ctrl + shift + Escape
-    missioncenter &
+    taskmgr12 &
+
+XF86Mail
+    taskmgr12 &
 
 
 # ----------------------------------------------------------
