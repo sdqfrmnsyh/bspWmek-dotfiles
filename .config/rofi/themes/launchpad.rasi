@@ -1,0 +1,77 @@
+* {
+    bg0: #1e1e1e;                   
+    bg2: #3a3a3c; 
+    bg3: #2c2c2e;  
+    fg0: #ffffff;                   
+    fg1: #a1a1a6;                   
+    background-color: transparent;
+    text-color: @fg0;
+}
+
+window {
+    width: 600px;        
+    background-color: @bg0;
+    border-radius: 16px; 
+    border: 1px;
+    border-color: @bg3;
+    padding: 0px; 
+}
+
+inputbar {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px;       
+    border-color: @bg3;
+    border-radius: 0px;       
+    padding: 12px 20px;       
+    margin: 0px;              
+    children: [icon-search, entry]; 
+}
+
+icon-search {
+    expand: false;
+    filename: "search-symbolic";
+    size: 16px;               
+    margin: 0px 10px 0px 0px; 
+    text-color: @fg1;
+}
+
+entry {
+    placeholder: "Applications"; 
+    placeholder-color: @fg1;
+}
+
+listview {
+    columns: 5;          
+    lines: 3;            
+    spacing: 8px;             
+    padding: 12px 15px 15px 15px; 
+    fixed-columns: true;
+    
+    dynamic: false;       
+    scrollbar: false;    
+      
+    click-to-execute: true; 
+}
+
+element {
+    padding: 6px;             
+    border-radius: 10px;
+    orientation: vertical; 
+    children: [element-icon, element-text];
+}
+
+element selected {
+    background-color: @bg2;
+}
+
+element-icon {
+    size: 42px;               
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    margin-top: 4px;          
+}

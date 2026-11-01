@@ -4,7 +4,7 @@
 
 # Application launcher
 super + r
-    ~/.scripts/rofi.sh rice &
+    ~/.scripts/rofi.sh main &
 
 # Emoji picker
 super + period
@@ -144,6 +144,8 @@ XF86AudioNext
 XF86AudioPrev
     playerctl previous &
 
+shift + Menu
+    cockpilot
 
 # ----------------------------------------------------------
 # Brightness

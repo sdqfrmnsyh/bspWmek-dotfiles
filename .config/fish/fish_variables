@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR SXHKD_SHELL:sh
+SETUVAR fish_user_paths:/home/modz/\x2eopencode/bin\x1e/home/modz/\x2elocal/bin

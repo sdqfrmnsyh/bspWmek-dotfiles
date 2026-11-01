@@ -73,7 +73,7 @@ element-icon {
 /* Search field */
 
 entry {
-    font: "IBM Plex Mono Medium 12";
+    font: "Inter 12";
 
     placeholder: "Search...";
     placeholder-color: @foreground-alt;

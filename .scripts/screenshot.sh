@@ -60,13 +60,13 @@ ambil_dan_simpan() {
 
 case "$mode" in
     full)
-        scrot -q 100 -Z 0 "$TMP"
+        scrot -q 100 -Z 9 "$TMP"
         killall dunst
         [ $? -ne 0 ] && { dunstify -u critical "❌ Fullscreen Failed" "scrot error"; exit 1; }
         ambil_dan_simpan
         ;;
     area)
-        scrot -q 100 -Z 0 -s "$TMP"
+        scrot -q 100 -Z 9 -s "$TMP"
         if [ $? -ne 0 ] || [ ! -f "$TMP" ]; then
         killall dunst
             dunstify "Area Cancelled" "No area selected" -t 2000
@@ -75,7 +75,7 @@ case "$mode" in
         ambil_dan_simpan
         ;;
     window)
-        scrot -q 100 -Z 0 -u "$TMP"
+        scrot -q 100 -Z 9 -u "$TMP"
         killall dunst
         [ $? -ne 0 ] && { dunstify -u critical "❌ Window Failed" "Unable to capture window"; exit 1; }
         ambil_dan_simpan
@@ -89,7 +89,7 @@ case "$mode" in
         killall dunst
         dunstify -r "$NOTIF_ID" -t 900 "📸 Now!" "Take a picture..."
         sleep 0.2
-        scrot -q 100 -Z 0 "$TMP"
+        scrot -q 100 -Z 9 "$TMP"
         killall dunst
         [ $? -ne 0 ] && { dunstify -u critical "❌ Countdown Failed" "script error"; exit 1; }
         ambil_dan_simpan
